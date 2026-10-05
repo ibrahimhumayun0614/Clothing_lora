@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact — Belhasa</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500&family=JetBrains+Mono:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <p class="promo">Free shipping over INR700.00. Duties &amp; Taxes included</p>
+
+    <header class="header" data-header>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-menu-toggle>
+        <span class="visually-hidden">Menu</span>
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+          <path d="M4 7h16M4 12h16M4 17h16" stroke-linecap="round" />
+        </svg>
+      </button>
+
+      <nav class="nav nav-left" id="site-nav" aria-label="Categories" data-nav>
+        <a href="index.html#men">Men</a>
+        <a href="index.html#women">Women</a>
+        <a href="index.html#girls">Girls</a>
+        <a class="nav-right-link" href="index.html#boys">Boys</a>
+        <a class="nav-right-link" href="index.html#kids">Kids</a>
+      </nav>
+
+      <a class="logo" href="index.html">Belhasa</a>
+
+      <div class="nav nav-right">
+        <a href="index.html#boys">Boys</a>
+        <a href="index.html#kids">Kids</a>
+        <button class="search-toggle" type="button" aria-expanded="false" aria-controls="search-panel" data-search-toggle>
+          <span class="visually-hidden">Search</span>
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true">
+            <circle cx="11" cy="11" r="6.25" />
+            <path d="M16.1 16.2 20.2 20.3" />
+          </svg>
+        </button>
+      </div>
+
+      <form class="search-panel" id="search-panel" role="search" hidden data-search-panel>
+        <label class="visually-hidden" for="search-input">Search Belhasa</label>
+        <input id="search-input" type="search" name="q" placeholder="Search men, women, girls, boys, kids" data-search-input />
+        <button class="search-close" type="button" data-search-close>Close</button>
+      </form>
+    </header>
+
+    <main>
+      <section class="hero contact-hero" aria-labelledby="contact-title">
+        <div class="hero-copy">
+          <p class="eyebrow">Contact</p>
+          <h1 id="contact-title">Write to the house</h1>
+          <p class="hero-text">Questions about an order, a size, or a piece for the family.</p>
+          <a class="cta" href="#write">Write to us</a>
+        </div>
+      </section>
+
+      <div class="contact" id="write">
+      <section aria-label="Message">
+        <form class="contact-form" data-contact>
+          <label class="contact-field">
+            <span>Name</span>
+            <input type="text" name="name" required autocomplete="name" />
+          </label>
+          <label class="contact-field">
+            <span>Email</span>
+            <input type="email" name="email" required autocomplete="email" />
+          </label>
+          <label class="contact-field">
+            <span>About</span>
+            <select name="about">
+              <option>An order</option>
+              <option>Sizing</option>
+              <option>The house</option>
+            </select>
+          </label>
+          <label class="contact-field">
+            <span>Message</span>
+            <textarea name="message" required></textarea>
+          </label>
+          <button class="order-submit" type="submit">Send</button>
+          <p class="contact-status" data-contact-status role="status"></p>
+        </form>
+      </section>
+
+      <aside class="contact-aside">
+        <h2>Reach us</h2>
+        <p>New drops, restocks, and family offers go out on WhatsApp and Instagram.</p>
+        <p>Orders over INR700.00 include free shipping. Duties and taxes are included in the price you see.</p>
+        <div class="contact-ways">
+          <a href="https://chat.whatsapp.com/" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+          <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a>
+        </div>
+      </aside>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-intro">
+        <p class="footer-statement">Clothes for the whole family.</p>
+        <p class="footer-lead">Quiet florals. Easy denim. Pieces for men, women, girls, boys, and kids.</p>
+      </div>
+      <div class="footer-grid">
+        <div class="footer-news">
+          <p class="footer-label">WhatsApp</p>
+          <p class="footer-news-copy">New drops, restocks, and family offers.</p>
+          <div class="footer-social">
+            <a class="footer-whatsapp" href="https://chat.whatsapp.com/" target="_blank" rel="noopener noreferrer">
+              <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+              Join our group
+            </a>
+            <a class="footer-whatsapp" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+              <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+              Instagram
+            </a>
+          </div>
+        </div>
+        <nav class="footer-links" aria-label="Shop">
+          <p class="footer-label">Shop</p>
+          <a href="index.html#men">Men</a>
+          <a href="index.html#women">Women</a>
+          <a href="index.html#girls">Girls</a>
+          <a href="index.html#boys">Boys</a>
+          <a href="index.html#kids">Kids</a>
+        </nav>
+        <nav class="footer-links" aria-label="Best sellers">
+          <p class="footer-label">Best sellers</p>
+          <a href="product.html?item=mission-ridge-straight-chino">Mission Ridge Straight Chino</a>
+          <a href="product.html?item=mens-alpineglo-sweater">Men's Alpineglo Sweater</a>
+          <a href="product.html?item=coaster-cord-lean-pant">Coaster Cord Lean Pant</a>
+          <a href="product.html?item=airsmyth-shirt">Airsmyth Shirt</a>
+        </nav>
+        <nav class="footer-links" aria-label="The house">
+          <p class="footer-label">The house</p>
+          <a href="index.html#top">New season</a>
+          <a href="index.html#sellers">Our best sellers</a>
+          <a href="index.html#house">Sized for the whole house</a>
+          <a href="contact.html">Contact us</a>
+        </nav>
+      </div>
+      <div class="footer-base">
+        <p>© 2026 Belhasa. All rights reserved.</p>
+        <nav class="footer-legal" aria-label="Legal">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms and Conditions</a>
+        </nav>
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script>
+      const form = document.querySelector("[data-contact]");
+      const status = document.querySelector("[data-contact-status]");
+
+      form.addEventListener("submit", (event) => {
+        event.preventDefault();
+        const data = new FormData(form);
+        status.textContent = "Message noted. " + data.get("name") + ", we will write back about " + String(data.get("about")).toLowerCase() + ".";
+        form.reset();
+      });
+    </script>
+  </body>
+</html>
