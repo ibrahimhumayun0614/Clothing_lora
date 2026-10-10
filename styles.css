@@ -360,7 +360,9 @@ select {
 .product-photo {
   position: relative;
   aspect-ratio: 3 / 4;
-  background: #e7e1d8;
+  background-color: #e7e1d8;
+  background-position: center;
+  background-size: cover;
 }
 
 .product-open {
