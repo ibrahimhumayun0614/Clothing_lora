@@ -1,6 +1,6 @@
 const products = {
   "mission-ridge-straight-chino": {
-    name: "Mission Ridge Straight Chino",
+    name: "Raw Slik Kurti",
     price: "INR 550.00",
     group: "Men",
     type: "Trousers",
@@ -13,7 +13,7 @@ const products = {
     ],
   },
   "mens-alpineglo-sweater": {
-    name: "Men's Alpineglo Sweater",
+    name: "Cotton Maxi",
     price: "INR 765.00",
     group: "Men",
     type: "Knits",
@@ -26,7 +26,7 @@ const products = {
     ],
   },
   "coaster-cord-lean-pant": {
-    name: "Coaster Cord Lean Pant",
+    name: "Raw Slik Kurti",
     price: "INR 575.00",
     group: "Men",
     type: "Trousers",
@@ -39,7 +39,7 @@ const products = {
     ],
   },
   "airsmyth-shirt": {
-    name: "Airsmyth Shirt",
+    name: "Cotton Maxi",
     price: "INR 430.00",
     group: "Men",
     type: "Shirts",
@@ -51,7 +51,7 @@ const products = {
     ],
   },
   "harbor-wool-overshirt": {
-    name: "Harbor Wool Overshirt",
+    name: "Raw Slik Kurti",
     price: "INR 690.00",
     group: "Men",
     type: "Shirts",
@@ -63,7 +63,7 @@ const products = {
     ],
   },
   "ridgeline-denim-jacket": {
-    name: "Ridgeline Denim Jacket",
+    name: "Cotton Maxi",
     price: "INR 820.00",
     group: "Men",
     type: "Outerwear",
@@ -75,7 +75,7 @@ const products = {
     ],
   },
   "fieldday-cotton-tee": {
-    name: "Fieldday Cotton Tee",
+    name: "Raw Slik Kurti",
     price: "INR 320.00",
     group: "Men",
     type: "Tees",
@@ -88,7 +88,7 @@ const products = {
     ],
   },
   "northline-chore-coat": {
-    name: "Northline Chore Coat",
+    name: "Cotton Maxi",
     price: "INR 910.00",
     group: "Men",
     type: "Outerwear",
@@ -120,7 +120,7 @@ let colorIndex = 0;
 let size = "M";
 let shotIndex = 0;
 
-document.title = product.name + " — Belhasa";
+document.title = product.name + " — Loxo Fashion";
 
 function renderGallery() {
   shots.forEach((shot, index) => {
@@ -143,7 +143,7 @@ function renderBuy() {
   crumbs.className = "crumbs";
   crumbs.setAttribute("aria-label", "Breadcrumb");
   crumbs.innerHTML =
-    '<a href="index.html">Belhasa</a><span aria-hidden="true">/</span>' +
+    '<a href="index.html">Loxo Fashion</a><span aria-hidden="true">/</span>' +
     '<a href="index.html#men">' + product.group + "</a><span aria-hidden=\"true\">/</span>" +
     "<span>" + product.type + "</span>";
 
