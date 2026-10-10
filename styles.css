@@ -2,6 +2,9 @@
   --ink: #111111;
   --white: #ffffff;
   --black: #000000;
+  --violet: #221335;
+  --violet-deep: #1a0f28;
+  --violet-soft: #ebe8f0;
   --font-primary: "JetBrains Mono", ui-monospace, monospace;
   --font-secondary: "DM Sans", sans-serif;
 }
@@ -54,7 +57,7 @@ select {
   justify-content: center;
   height: 40px;
   margin: 0;
-  background: var(--black);
+  background: var(--violet-deep);
   color: var(--white);
   font-size: 14px;
   line-height: 20px;
@@ -68,7 +71,7 @@ select {
   display: grid;
   grid-template-columns: 1fr auto 1fr;
   align-items: center;
-  height: 80px;
+  height: 88px;
   padding: 0 48px;
   background: var(--white);
 }
@@ -90,6 +93,10 @@ select {
   color: var(--ink);
 }
 
+.nav a:hover {
+  color: var(--violet);
+}
+
 .nav-right {
   justify-content: flex-end;
 }
@@ -99,11 +106,16 @@ select {
 }
 
 .logo {
-  font-family: var(--font-primary);
-  font-size: 30px;
-  font-weight: 500;
-  line-height: 36px;
-  letter-spacing: 0;
+  display: inline-flex;
+  align-items: center;
+  line-height: 0;
+}
+
+.logo img {
+  display: block;
+  width: auto;
+  height: 72px;
+  max-height: calc(88px - 16px);
 }
 
 .search-toggle,
@@ -151,7 +163,7 @@ select {
 
 .header.is-searching {
   height: auto;
-  min-height: 80px;
+  min-height: 88px;
   padding-bottom: 16px;
 }
 
@@ -251,7 +263,12 @@ select {
 
 .banner-copy .cta {
   background: var(--white);
-  color: var(--ink);
+  color: var(--violet-deep);
+}
+
+.banner-copy .cta:hover {
+  background: var(--violet-soft);
+  color: var(--violet-deep);
 }
 
 .hero-text {
@@ -274,10 +291,15 @@ select {
   align-items: center;
   justify-content: center;
   padding: 14px 28px;
-  background: var(--white);
-  color: var(--ink);
+  background: var(--violet);
+  color: var(--white);
   font-size: 14px;
   line-height: 20px;
+  transition: background 0.2s ease;
+}
+
+.cta:hover {
+  background: var(--violet-deep);
 }
 
 .cta:focus-visible,
@@ -305,11 +327,11 @@ select {
   position: relative;
   padding: 48px 72px 56px;
   background: var(--white);
-  scroll-margin-top: 96px;
+  scroll-margin-top: 104px;
 }
 
 .banner {
-  scroll-margin-top: 96px;
+  scroll-margin-top: 104px;
 }
 
 .sellers h2,
@@ -317,7 +339,7 @@ select {
   display: inline-block;
   margin: 0 0 28px;
   padding-bottom: 8px;
-  border-bottom: 1px solid var(--ink);
+  border-bottom: 2px solid var(--violet);
   font-family: var(--font-secondary);
   font-size: 14px;
   font-weight: 500;
@@ -432,7 +454,13 @@ select {
 
 .order-now {
   flex-shrink: 0;
+  font-weight: 500;
+  color: var(--violet);
   white-space: nowrap;
+}
+
+.order-now:hover {
+  color: var(--violet-deep);
 }
 
 .sellers-next {
@@ -466,7 +494,7 @@ select {
   min-height: 140px;
   padding-top: 16px;
   border-top: 1px solid var(--ink);
-  scroll-margin-top: 96px;
+  scroll-margin-top: 104px;
 }
 
 .catalog h3 {
@@ -600,6 +628,13 @@ select {
 .legal-logo {
   display: inline-block;
   margin-bottom: 48px;
+  line-height: 0;
+}
+
+.legal-logo img {
+  display: block;
+  width: auto;
+  height: 72px;
 }
 
 .legal h1,
@@ -637,7 +672,7 @@ select {
 }
 
 .contact {
-  scroll-margin-top: 96px;
+  scroll-margin-top: 104px;
   display: grid;
   grid-template-columns: 1.15fr 0.85fr;
   gap: 64px 48px;
@@ -734,6 +769,28 @@ select {
   text-transform: uppercase;
 }
 
+.contact-address-wrap {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  margin-bottom: 16px;
+  color: var(--violet);
+}
+
+.contact-address-wrap i {
+  flex-shrink: 0;
+  margin-top: 2px;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.contact-address {
+  margin: 0;
+  font-style: normal;
+  line-height: 22px;
+  color: var(--ink);
+}
+
 .contact-aside p + p {
   margin-top: 12px;
 }
@@ -794,7 +851,7 @@ select {
 
 .product-buy {
   position: sticky;
-  top: 96px;
+  top: 104px;
 }
 
 .related {
@@ -889,9 +946,14 @@ select {
   width: 100%;
   height: 48px;
   border: 0;
-  background: var(--ink);
+  background: var(--violet);
   color: var(--white);
   cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.order-submit:hover {
+  background: var(--violet-deep);
 }
 
 .order-status,
