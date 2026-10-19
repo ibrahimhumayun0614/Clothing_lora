@@ -1,4 +1,4 @@
-const LOXO_WHATSAPP_PHONE = "919940815346";
+const LOXO_WHATSAPP_PHONE = "919344624318";
 
 function buildWhatsAppOrderMessage({ name, price, color, size }) {
   const lines = ["Hello, I would like to order from Loxo Fashion:", "", "Product: " + name];

@@ -8,6 +8,7 @@ const maxiShots = [
   { src: "images/Cotton_Maxi_02.webp", position: "center" },
   { src: "images/cotton_maxi_03.webp", position: "center" },
   { src: "images/cotton_Maxi_04.webp", position: "center" },
+  { src: "images/cotton_Maxi_05.webp", position: "center top" },
 ];
 
 window.LoxoProducts = {
@@ -115,7 +116,7 @@ window.LoxoProducts = {
   },
   "northline-chore-coat": {
     name: "Cotton Maxi",
-    cover: "images/cotton_Maxi_04.webp",
+    cover: "images/cotton_Maxi_05.webp",
     shots: maxiShots,
     price: "INR 910.00",
     group: "Men",
