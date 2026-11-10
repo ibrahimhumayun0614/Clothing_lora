@@ -511,10 +511,17 @@ select {
   display: flex;
   flex-direction: column;
   gap: 8px;
-  min-height: 140px;
-  padding-top: 16px;
-  border-top: 1px solid var(--ink);
   scroll-margin-top: 104px;
+}
+
+.catalog-photo {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  margin-bottom: 8px;
+  border-radius: 4.5px;
+  background: #e7e1d8;
+  object-fit: cover;
 }
 
 .catalog h3 {
@@ -1085,7 +1092,8 @@ select {
   }
 
   .catalog {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px 16px;
     padding-top: 40px;
   }
 
